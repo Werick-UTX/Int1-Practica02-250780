@@ -57,3 +57,100 @@ En caso de que necesitemos alinear el párrafo a **izquierda**, **derecha**, **c
 <p align ="center">parrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centradaparrafo con alineación centrada
 
 <p align = "justify"> parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado  parrafo con texto justificado.
+
+### 4. Enfatizado de Texto
+
+- Texto en Negritas: Para resaltar texto importante que no sea un título por que esto inicialmente están en negrita, deberemos encerrar el texto deseado entre dobles asteríscos (**).
+
+Ejemplo: Este texto esta en **negrita**.
+
+- Texto en cursova (itálica): Para hacer referencia a tezto utilizando el formato inclinado o itálico bastara con encerrar el texto deseado entre dos asterisccos simples (*).
+
+Ejemplo: Este *texto* estará *inclinando*.
+
+- Texto en Cursiva y negrita: Para lograr esta estilización en la documentación basta juntar ambas configuraciones, es decir encerramos el texto en un triple asterísco (***).
+
+Ejemplo ***Este texto esta Negrita e Itálico.***
+
+- Texto tacahdo: En algunas ocaciones es necesario dar frormato al texto con un efecto de como es incorrectom generalmente esta idea se trasmite por que el texto esta tachado, es decir como una línea que lo marca por la mitad. Para lograr este efecto tendremos que encerrar el texto entre una doble tínde de (~).
+
+Ejemplo: Se dice haya no ~haiga~.
+
+- Texto subrayado: En este tipo de formato el texto queda sobre una línea inferior para denotar su relevancai, este formato no tiene una versión rápida en el estándar MARKDOWN, perodado su smilaridad a HMTL oidemos utilizar las etiquetas ``` <u> ``` y ``` <u> ```.
+
+Ejemplo: El <u>texto</u> deve estar <u>subrayado</u>.
+- Texto en Super Índice: En algunas ocaciones se requiere dar formato a fórmulas estadísticas que requiere potencias entre otras aplicaciones, podemos utlizar el tag de HTML ```<sup>``` y ```</sup>``` para delimitar, el formato.
+
+Ejemplo: Para elevar x al cuadradotendriamos lo siguiente x <sup>2</sup>
+
+- Texto en Subíndice: En el caso de química se utlizan subíndices para representar formulas, para ello podemos utlizar el formato de texto con la etiqueta HTML.
+
+Ejemplo: La fórmula del Agua es H<sub>2</sub>O
+
+### 5. Listas
+
+Cuando realiamoz documentación utilizando el estándar de MARKDOWN, es común que tengamos que listar elementosm requisitos de hardware, requisitos de software o enumerar pasos de cómo el software debe ser instalado paso a paso, por eso debemos saber cómo crear listas de las cuales hay de 3 tipos: **Ordenadas (Números)**, **Desrodenadas (Viñetas)** y **Mixtas (Viñetas y Números)**.
+
+1. Listas Ordenadas 
+
+Estas deberán enumeradas con un núnero seguido por un punto y un espacio en blanco para comenzar con el listado:
+
+1. PC
+2. Wifi
+3. Modém
+4. Smartphone
+6. Smar TV
+5. Tablet
+
+2. Listas Desordenadas
+
+Estas listas no llevan núnero, sino una viñeta (simbolo), y suele listar elementos que no requieren un orden especifico
+ 
+- Pan
+- Leche 
+- Huevo
+- Azucar
+
+3. Listas Mixtas
+
+Son aquellas que mezcla ambos elementos
+
+- 3° A DSM
+    1. Juan
+    2. Pedro
+    3. Alejandra
+- 3° B DSM
+    1. Romina
+    2. Daniel
+- 3° C DSM
+    1. Yhair
+    2. Liseth
+    3. Jeovany
+    4. Erick
+
+### 6. Bloque de Códigos (CODE BLOCKS) o Citas (BLOCK QUOTES)
+
+Estos estilos de texto se utilizan para llamar la atención  del lector, en pasos que son importantes, realizar alguna reseña o segmentar líneas de código  que se deberán ingresar en una terminal de comandos o líneas de ejecución.
+
+- Cuadros de citas (BLOCK QUOTES)
+Son cajas estilizadas en colores grises por defecto con un margén más claro.
+
+Ejemplo:
+
+> C:/dir
+
+Después oprimimos la tecla *Enter*
+
+También podemos usar texto multitarea 
+
+**Ejemplo:**
+
+Pasos para instalar MySQL
+
+> - Descargar el archivo instalador desde la páfina oficiel www.mysql.com
+> - Instalar el servidor de Bases de Datos
+> - Definir el puerto y contraseña para el usuario **root**
+> - Inicializamos el servidor de bases de datos
+> - Conectarnos a la base de datos para verificar que se instaló correctamente.
+
+- bloques de código
