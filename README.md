@@ -223,11 +223,13 @@ Ejemplo:
 
 Si nuestra documentación require ubicar notas de importancia o relevancia posterior podemos usar notas al pie de manera dinámica
 
-Nota al pie 1[^first]
-Nota al pie 2[^second].
+Nota al pie 1[^first] y Nota al pie 2[^second].
 
-Referencias al pie dentro de un párrafo ^[nota interna] extenso dentro de nuestra documentación
+Referencias al pie dentro de un párrafo ^[Nota interna corregida: este formato en línea funciona en plataformas como Obsidian o Pandoc] extenso dentro de nuestra documentación.
 
-Segunda referencai a la nota 2[^second]
+Segunda referencia a la nota 2[^second].
 
-[^second]texto de la segunda nota al pie
+---
+
+[^first]: Texto de la primera nota al pie (este es el que faltaba).
+[^second]: Texto de la segunda nota al pie.
