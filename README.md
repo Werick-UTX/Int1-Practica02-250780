@@ -233,3 +233,34 @@ Segunda referencia a la nota 2[^second].
 
 [^first]: Texto de la primera nota al pie (este es el que faltaba).
 [^second]: Texto de la segunda nota al pie.
+Referencias al pie dentro de un párrafo <a href="#fn_inline">³</a> extenso dentro de nuestra documentación.
+<p id="fn1">¹ Texto de la primera nota al pie (este es el que faltaba).</p>
+<p id="fn2">² Texto de la segunda nota al pie.</p>
+<p id="fn_inline">³ Nota interna corregida: este formato funciona de manera universal mediante etiquetas HTML.</p>
+
+---
+
+### 11. Abreviaciones (Abbreviations)
+
+El estándar de Markdown (junto con extensiones comunes como `markdown-it-abbr`) nos permite definir abreviaciones que mostrarán su significado completo cuando el usuario coloque el cursor sobre ellas. 
+
+Este formato es inteligente: convierte las coincidencias exactas de la palabra, pero mantiene intactas las entradas parciales o palabras compuestas (por ejemplo, convertirá la palabra "HTML" por separado, pero dejará sin cambios términos como "xxxHTMLyyy").
+
+Para declararlas, se coloca un asterisco seguido de la abreviación entre corchetes, dos puntos y su significado.
+
+**Ejemplo:**
+
+El lenguaje HTML es vital para el desarrollo web.
+
+*[HTML]: Hyper Text Markup Language
+
+### 12. Contenedores Personalizados (Custom Containers)
+
+Cuando creamos documentación técnica, es fundamental resaltar advertencias, notas importantes o consejos de una manera visualmente llamativa. Para ello, podemos utilizar contenedores personalizados apoyados en bloques de tres puntos dobles (`:::`) seguidos de la palabra clave o etiqueta del contenedor (como *warning*, *info* o *danger*).
+
+**Ejemplo:**
+
+::: warning
+*aquí hay dragones (ten cuidado con el código)*
+:::
+
